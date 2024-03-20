@@ -1,0 +1,127 @@
+/* Global Variables */
+body, html {
+    background-color: #1B262C;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hidden {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+/* Navbar */
+
+.top-navbar {
+    width: 100%;
+    background-color: #1B262C;
+    height: 48px;
+}
+.nav-text {
+    font-weight: 400;
+    font-size: clamp(12px, 1vw, 48px);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+/* About Me */
+.about-me {
+    background-image: url(IMG_3250.jpeg);
+    position: static;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F4C75;
+    height: auto;
+    border-radius: 1em;
+    margin: 3rem;
+    width: clamp(30rem, 60%, 100rem);
+    height: auto;
+    padding: 1.5rem;
+}
+.about-me-self {
+    background-image: url(profile_pic.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: min(10rem, 80rem);
+    width: clamp(5rem,20%,40rem);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.about-me-text-container {
+    display: flex;
+    align-items: center;
+    background-color: #0F4C75;
+    text-align: left;
+    text-indent: 20px;
+    border-radius: 2rem;
+    color: white;
+    max-width: 60%;
+    max-height: 100%;
+    padding: 1.5rem;
+}
+.about-me-text {
+    font-size: clamp(.5vm, 2%, 1.5em);
+}
+.about-me-text .paragraph {
+    text-indent: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .about-me {
+        
+    }
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        padding: 1rem;
+        padding-top: 2rem;
+
+    }
+    .about-me-self {
+        height: 10rem;
+    }
+    .about-me-text-container{
+        height: auto;
+        max-width: 100%;
+    }
+    .about-me-text {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Education */
+.education {
+    background-color: #0F4C75;
+    height: 50rem;
+}
+/* Projects */
+.project {
+    background-color: #3282B8;
+    height: 50rem;
+}
+/* Work Experience */
+.experience {
+    background-color: #0F4C75;
+    height: 50rem;
+}
+/* Footer */
+.footer {
+    background-color: #1B262C;
+    height: 50rem;
+}
