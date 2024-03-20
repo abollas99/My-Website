@@ -64,8 +64,8 @@ body, html {
 .about-me-text-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: #0F4C75;
-    text-align: left;
     text-indent: 20px;
     border-radius: 2rem;
     color: white;
@@ -75,6 +75,7 @@ body, html {
 }
 .about-me-text {
     font-size: clamp(.5vm, 2%, 1.5em);
+    text-align: left;
 }
 .about-me-text .paragraph {
     text-indent: 20px;
@@ -98,6 +99,7 @@ body, html {
     .about-me-text-container{
         height: auto;
         max-width: 100%;
+
     }
     .about-me-text {
         font-size: 14px;
