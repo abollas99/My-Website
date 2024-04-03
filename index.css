@@ -16,13 +16,31 @@ body, html {
     width: 100%;
     background-color: #1B262C;
     height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.nav-center {
+    text-align: center;
+    color: white; 
+    width: 100%;
+
 }
 .nav-text {
     font-weight: 400;
-    font-size: clamp(12px, 1vw, 48px);
-    color: white;
-    text-align: center;
+    font-size: clamp(16px, 1.7vw, 36px);
     align-items: center;
+    line-height: 40px;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    text-decoration: none;
+    color: white;
+}
+.nav-text:hover {
+    color: #BBE1FA;
+}
+@media screen and (max-width: 900px) {
+
 }
 /* About Me */
 .about-me {
@@ -77,19 +95,15 @@ body, html {
     font-size: clamp(.5vm, 2%, 1.5em);
     text-align: left;
 }
-.about-me-text .paragraph {
-    text-indent: 20px;
-}
-@media screen and (max-width: 1024px) {
-    .about-me {
-        
-    }
+
+@media screen and (max-width: 900px) {
     .about-me-container {
         display: flex;
         flex-direction: column;
         height: auto;
+        max-height: 85%;
         width: 90%;
-        padding: 1rem;
+        padding: .5rem;
         padding-top: 2rem;
 
     }
@@ -104,6 +118,9 @@ body, html {
     .about-me-text {
         font-size: 14px;
         text-align: center;
+    }
+    .about-me-title-text {
+        font-size: 1.1em;
     }
 }
 
