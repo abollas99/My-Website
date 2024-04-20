@@ -2,6 +2,8 @@
 body, html {
     background-color: #1B262C;
     height: 100%;
+    width: 100%;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 .hidden {
@@ -28,9 +30,9 @@ body, html {
 }
 .nav-text {
     font-weight: 400;
-    font-size: clamp(16px, 1.7vw, 36px);
+    font-size: clamp(16px, 1.2vw, 36px);
     align-items: center;
-    line-height: 40px;
+    line-height: 48px;
     padding-left: .3rem;
     padding-right: .3rem;
     text-decoration: none;
@@ -59,7 +61,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0F4C75;
     height: auto;
     border-radius: 1em;
     margin: 3rem;
@@ -67,6 +68,7 @@ body, html {
     height: auto;
     padding: 1.5rem;
 }
+
 .about-me-self {
     background-image: url(profile_pic.jpg);
     background-size: cover;
@@ -83,14 +85,17 @@ body, html {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #0F4C75;
-    text-indent: 20px;
     border-radius: 2rem;
     color: white;
     max-width: 60%;
     max-height: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(15, 76, 117, .7);
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 .about-me-text {
     font-size: clamp(.5vm, 2%, 1.5em);
     text-align: left;
@@ -125,19 +130,74 @@ body, html {
 }
 
 /* Education */
-.education {
-    background-color: #0F4C75;
-    height: 50rem;
+.edu {
+    background-color: #1B262C;
+    /* padding: 2rem; */
+    height: auto;
+    color: white;
+}
+.edu-inner {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.edu-title {
+    text-align: center;
+    width: 100%;
+}
+.edu-school {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+.edu-degree {
+    text-align: center;
+    /* width: 90%; */
+}
+.edu-date {
+    
+}
+.edu-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.edu-section {
+    /* padding: 1rem; */
+    width: 50%;
+}
+@media screen and (max-width: 900px) {
+    .edu-container{
+        flex-wrap: wrap;
+    }
+    .edu-section {
+        width: 100%;
+    }
 }
 /* Projects */
 .project {
-    background-color: #3282B8;
+    background-color: #1B262C;
     height: 50rem;
 }
 /* Work Experience */
 .experience {
-    background-color: #0F4C75;
-    height: 50rem;
+    background-color: #1B262C;
+    height: auto;
+    color: white;
+    padding: 2rem;
+}
+.exp-container {
+    display: flex;
+    padding: 1rem;
+    flex-flow: row wrap;
+}
+.exp-title {
+    text-align: center;
+}
+.exp-container-item {
+    width: 50%;
 }
 /* Footer */
 .footer {
